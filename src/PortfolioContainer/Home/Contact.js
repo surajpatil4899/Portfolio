@@ -3,9 +3,12 @@ import emailjs from "emailjs-com";
 import "./Home.css";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer/Footer";
+import Navbar from "./Navbar";
+import { motion } from "framer-motion";
+import { Nav } from "react-bootstrap";
 
 const Contact = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
   function sentEmail(e) {
     e.preventDefault();
 
@@ -22,8 +25,15 @@ const Contact = () => {
       .catch((err) => console.log(err));
   }
   return (
-    <div className="home-container" style={{ position: "relative" }}>
-      <button
+    <motion.div
+      className="home-container"
+      style={{ position: "relative" }}
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100, trnasition: { duration: 2} }}
+    >
+      <Navbar />
+      {/* <button
         className="btn btn-secondary"
         onClick={() => navigate("/")}
         style={{
@@ -35,11 +45,11 @@ const Contact = () => {
         }}
       >
         Back
-      </button>
+      </button> */}
       <div
         className="container border"
         style={{
-          marginTop: "30px",
+          marginTop: "10px",
           width: "50%",
           backgroundImage:
             "url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000)",
@@ -73,7 +83,7 @@ const Contact = () => {
         </form>
       </div>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,12 +1,22 @@
 import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
+import "./Home.css";
+import Navbar from "./Navbar";
+import Footer from "./Footer/Footer";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Nav } from "react-bootstrap";
 
 export default function Profile() {
   const navigate = useNavigate();
   return (
-    <div className="profile-container">
+    <motion.div
+      className="profile-container"
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -100, trnasition: { duration: 2} }}
+    >
       <div className="profile-parent">
         <div className="profile-details">
           <div className="colz">
@@ -62,7 +72,7 @@ export default function Profile() {
           <div className="profile-options">
             <button
               className="btn btn-primary"
-              onClick={() => navigate("contact/*")}
+              onClick={() => navigate("/contact")}
             >
               Hire Me
             </button>
@@ -75,6 +85,6 @@ export default function Profile() {
           <div className="profile-picture-background"></div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

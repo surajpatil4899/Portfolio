@@ -1,16 +1,13 @@
 import "./App.css";
-import Home from "./PortfolioContainer/Home/Home";
-import Contact from "./PortfolioContainer/Home/Contact"
+
 import { Route, Routes, BrowserRouter } from "react-router-dom";
+import AnimatedRoutes from "./PortfolioContainer/Home/AnimatedRoutes";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="contact/*" element={<Contact />} />
-        </Routes>
+        <AnimatedRoutes />
       </BrowserRouter>
     </div>
   );
