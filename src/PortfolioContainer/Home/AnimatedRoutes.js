@@ -1,6 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import React from "react";
 import Home from "./Home";
+import { Skills  } from "./Skills";
 import Contact from "./Contact";
 import About from "./About";
 import { AnimatePresence } from "framer-motion";
@@ -13,6 +14,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
       </Routes>
     </AnimatePresence>
   );

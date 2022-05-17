@@ -1,7 +1,7 @@
 .home-container{
-    display: flex;
+    display: flex; 
     flex-direction: column;
-    justify-content: space-between;
+     justify-content: space-between;
     min-height: 670px;
     background-image: url(../../Assets//Home/bg.jpg);
 }

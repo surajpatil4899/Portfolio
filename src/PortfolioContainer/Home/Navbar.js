@@ -39,9 +39,9 @@ function Navbar() {
           </a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <NavLink to="/skills" className="nav__link">
             Skills
-          </a>
+          </NavLink>
         </li>
         <li className="nav__item">
           <NavLink to="/contact" className="nav__link">

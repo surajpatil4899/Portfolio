@@ -30,7 +30,7 @@ export default function About() {
                   <br />
                   and design. Proficient in C++ (DSA and Problem Solving),
                   <br />
-                  HTML 5, JavaScript, and Python.
+                  HTML 5, JavaScript, and ReactJs.
                   <br />
                   Ability to learn new softwares and technologies quickly.
                   <br />
@@ -41,9 +41,9 @@ export default function About() {
             <div className="profile-options">
               <button
                 className="btn btn-primary"
-                onClick={() => navigate("/contact")}
+                onClick={() => navigate("/skills")}
               >
-                Hire Me
+                Skills
               </button>
               <a href="Suraj_Patil.pdf" download="Suraj Suraj_Patil.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
