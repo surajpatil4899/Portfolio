@@ -4,6 +4,7 @@ import Footer from './Footer/Footer'
 import './Home.css'
 import Navbar from './Navbar'
 
+
 export default function Home() {
   return (
     <div

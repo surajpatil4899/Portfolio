@@ -2,11 +2,9 @@ import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
 import "./Home.css";
-import Navbar from "./Navbar";
-import Footer from "./Footer/Footer";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Nav } from "react-bootstrap";
+
 
 export default function Profile() {
   const navigate = useNavigate();

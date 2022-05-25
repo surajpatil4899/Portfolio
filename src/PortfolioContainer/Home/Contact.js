@@ -57,41 +57,41 @@ const Contact = () => {
           boxShadow: "5px 10px #888888",
         }}
       >
-        <h1
-          style={{
-            marginTop: "25px",
-            fontSize: "45px",
-            color: "white",
-            textShadow: "2px 2px black",
-          }}
-          className="col-sm-6 offset-sm-3"
-        >
-          Contact Me
-        </h1>
-        <form
-          className="row"
-          onSubmit={sentEmail}
-          style={{ margin: "25px 85px 50px 100px" }}
-        >
-          <label style={{ color: "white", textShadow: "1.5px 1.5px black" }}>
-            Name
-          </label>
-          <input type="text" name="name" className="form-control" />
-          <label style={{ color: "white", textShadow: "1.5px 1.5px black" }}>
-            Email
-          </label>
-          <input type="email" name="user_email" className="form-control" />
-          <label style={{ color: "white", textShadow: "1.5px 1.5px black" }}>
-            Message
-          </label>
-          <textarea name="message" rows="4" className="form-control" />
-          <input
-            type="submit"
-            style={{ marginTop: "30px", padding: "5px"}}
-            value="Send"
-            className="form-control btn btn-dark col-sm-4 offset-sm-4"
-          />
-        </form>
+          <h1
+            style={{
+              marginTop: "25px",
+              fontSize: "45px",
+              color: "white",
+              textShadow: "2px 2px black",
+            }}
+            className="col-sm-6 offset-sm-3"
+          >
+            Contact Me
+          </h1>
+          <form
+            className="row"
+            onSubmit={sentEmail}
+            style={{ margin: "25px 85px 50px 100px" }}
+          >
+            <label style={{ color: "white", textShadow: "1.5px 1.5px black" }}>
+              Name
+            </label>
+            <input type="text" name="name" className="form-control" />
+            <label style={{ color: "white", textShadow: "1.5px 1.5px black" }}>
+              Email
+            </label>
+            <input type="email" name="user_email" className="form-control" />
+            <label style={{ color: "white", textShadow: "1.5px 1.5px black" }}>
+              Message
+            </label>
+            <textarea name="message" rows="4" className="form-control" />
+            <input
+              type="submit"
+              style={{ marginTop: "30px", padding: "5px" }}
+              value="Send"
+              className="form-control btn btn-dark col-sm-4 offset-sm-4"
+            />
+          </form>
       </div>
       <Footer />
     </motion.div>
