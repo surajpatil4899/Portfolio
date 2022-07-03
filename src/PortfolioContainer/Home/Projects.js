@@ -17,7 +17,7 @@ export default function Projects() {
           <div className="card-body">
             <p>
               Enthusiastic engineering graduate with basic knowledge in coding and design. Proficient in C++ (DSA and Problem Solving), HTML 5,
-              JavaScript, and ReactJs. 
+              JavaScript, and ReactJs.
             </p>
           </div>
         </div>
